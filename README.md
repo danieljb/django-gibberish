@@ -61,6 +61,10 @@ The following values disable gibberish:
 
 Defaults to `g`.
 
+## Disclaimer #
+
+Note that this app currently is in alpha status. Since there was no excessive testing neither are test cases implemented, it might not work as expected in some situations. It seems to be working fine for me though.
+
 ## Copyright #
 
 Django Gibberish is distributed under GNU General Public License. 
