@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import os
 
@@ -12,7 +13,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-gibberish',
-    version='0.0.0',
+    version=__import__('gibberish').get_version().replace(' ', '-'),
     description='Turn perfectly proofread sites into a dyslectic paradise.',
     long_description=README,
     author='Daniel J. Becker',
