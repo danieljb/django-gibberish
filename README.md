@@ -61,6 +61,12 @@ The following values disable gibberish:
 
 Defaults to `g`.
 
+## Todos #
+
+* Tests
+* Documentation
+* Caching
+
 ## Disclaimer #
 
 Note that this app currently is in alpha status. Since there was no excessive testing neither are test cases implemented, it might not work as expected in some situations. It seems to be working fine for me though.
