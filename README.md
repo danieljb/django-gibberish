@@ -6,7 +6,16 @@ Gibberish is a django template tag to insert typos to your texts.
 
 ## Installation #
 
-…
+Install using `pip`:
+
+    pip install -e git+http://github.com/danieljb/django-gibberish.git#egg=gibberish
+
+Add `'gibberish'` to your `INSTALLED_APPS` setting.
+
+    INSTALLED_APPS = (
+        …
+        'gibberish',
+    )
 
 ## Usage #
 
@@ -24,6 +33,8 @@ This might result someting like the following markup:
 	<h2>Hlelo World</h2>
 
 ## Configuration #
+
+The following options are available in your project’s `settings.py` file:
 
 #### `GIBBERISH_FREQUENCY` #
 
