@@ -36,7 +36,12 @@ class GibberishNode(template.Node):
         self.nodelist = nodelist
 
     def render(self, context):
+        request = context['request']
         output = self.nodelist.render(context)
+
+        if not request.session.get('gibberish', False):
+            return output
+
         random_words = re.compile('\w{4,}').findall(strip_tags(output))
         gibberished_wordmap = map(
             lambda x: [x, gibberishify(x, chunk_length=CHUNK_LENGTH)], 
